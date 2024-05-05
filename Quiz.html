@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <style>
+    .fill {
+          background-color: lightgrey;
+          max-width: 1000px;
+          padding:50px;
+         }
+.header-container{
+            background-image:
+             url('https://i.pinimg.com/564x/4f/13/f9/4f13f9b132d7fb9111912253eaba5911.jpg');
+          background-position: center;
+          background-size: cover;
+          height: 300px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #ffffff;
+         }
+         .header-text{
+            font-family: helvetica;
+            font-size: 60px;
+         }
+         h1{
+            text-shadow: 2px 2px #6254ba;
+         }
+         ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        }
+         li {
+            float: left;
+            }
+
+         li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+        li a:hover {
+            background-color: #111;
+        }
+        body{
+            background-color: #3d3d3d;
+         }
+  </style>
+</head>
+<body>
+    <div class="header-container"></div>
+      <div class="container"></div>
+      <ul>
+  <li><a class="active" href="#loginPage">Login</a></li>
+  <li><a href="#mainPage">Home</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+  <div id="loginPage">
+    <br>
+    <mark><h1>Login Page</h1><mark>
+    <center>
+    <div class="fill">
+        <img src="https://i.pinimg.com/564x/90/0f/a0/900fa0c9deb4c9136d485914e1ff1be3.jpg" class="rounded" style="max-width: 32%;" >
+        <br>
+        <p>Please input your Login Info-!</p>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    </div>
+</center>
+  </div>
+
+  <div id="mainPage" style="display: none;">
+    <br>
+    <h1>Main Page-!</h1>
+    <center>
+    <div class="fill">
+      <img src="https://i.pinimg.com/564x/3d/90/14/3d901498a7d3f822ab50eb8812061433.jpg" class="rounded" style="max-width: 50%; float: left;">
+      <div>
+      <h3>Click on these buttons to view my previous works!!<h3>
+      <img src="file:///C:/Users/anne/Downloads/1st%20proj.jpg" style="max-width: 30%" class="rounded">
+    <a href="https://ashernandez1.github.io/Q1_PROJECT/"><button>View Quarter 1 Project</button></a>
+      <img src="file:///C:/Users/anne/Downloads/2nd%20proj.jpg" style="max-width: 30%" class="rounded">
+    <a href="https://ashernandez1.github.io/Q2-Project/"><button>View Quarter 2 Project</button></a>
+      <img src="file:///C:/Users/anne/Downloads/3rd%20proj.jpg" style="max-width: 30%" class="rounded">
+    <a href="https://ashernandez1.github.io/Q3-Project/"><button>View Quarter 3 Project</button></a>
+    </center>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+      document.getElementById("loginPage").style.display = "none";
+      document.getElementById("mainPage").style.display = "block";
+    }
+  </script>
+</body>
+</html>
