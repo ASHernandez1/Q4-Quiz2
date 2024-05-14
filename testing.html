@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz2</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .button1{background-color: #25283D; color:#E6E4CE}
+        .button2{background-color: #7D84B2; color:#E6E4CE}
+        .button3{background-color: #8FA6CB; color:#E6E4CE}
+        .search-button{color: #AD9BAA}
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .container {
+            margin-top: 20px;
+         }
+        .header-container-1{
+            background-image: url('https://i.pinimg.com/564x/4f/13/f9/4f13f9b132d7fb9111912253eaba5911.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+         }
+         .form-group{
+             background-color: lightgrey;
+          max-width: 100%;
+          padding:50px;
+         }
+         .header-text{
+            font-family: helvetica;
+            font-size: 60px;
+         }
+         h1{
+            text-shadow: 2px 2px #6254ba;
+         }
+        h3{
+            text-shadow: 2px 2px #927bc7;
+         }
+         ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        }
+         li {
+            float: left;
+            }
+
+         li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+        li a:hover {
+            background-color: #111;
+        }
+        body{
+            background-color: #3d3d3d;
+         }
+    </style>
+</head>
+<body>
+<div class="header-container-1"></div>
+<!-- Index Page (Login Form) -->
+<div class="container" id="login-page">
+    <h1 class="text-center" id="label">Login to Your Portfolio</h1>
+    <form id="login-form" class="w-50 mx-auto">
+        <div class="form-group">
+            <center><img src="https://i.pinimg.com/564x/90/0f/a0/900fa0c9deb4c9136d485914e1ff1be3.jpg" class="rounded" style="max-width: 32%;" ></center>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Log in</button>
+    </form>
+</div>
+
+<div id="main-page" style="display:none;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="viewPage('page1')">First Quarter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="viewPage('page2')">Second Quarter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="viewPage('page3')">Third Quarter</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn search-button btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <div class="form-group">
+             <button class="btn button1" href="#" onclick="viewPage('page1')">View 1st Quarter Project</button>
+             <button class="btn button2" href="#" onclick="viewPage('page2')">View 2nd Quarter Project</button>
+             <button class="btn button3" href="#" onclick="viewPage('page3')">View 3rd Quarter Project</button>
+        </div>
+    </div>
+    <div class="container" id="page1" style="display:none;">
+        <h3>Quarter 1 Project</h3>
+        <div class="form-group">
+            <table border="black">
+                <tr>
+                    <th colspan="3"> Characters in Noli Me Tanghere </th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="file:///C:/Users/anne/Downloads/Tasio.jpg" width="100px" alt="Pilosopo Tasio">
+                    </td>
+                    <td>
+                        Pilosopo Tasio
+                    </td>
+                    <td>Pilosopo Tasio is an old scholar who lives in San Diego. Although he is smart some think he's out of his mind because of his crazy ideas and his perceptions on Christianity.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="file:///C:/Users/anne/Downloads/Pedro.jpg" width="100px" alt="Pedro">
+                    </td>
+                    <td>
+                        Pedro
+                    </td>
+                    <td>Pedro is the husband of Sisa. He's also the father of Basilio and Crispin. He is a representation of how abusive the relationships of families were back then.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="file:///C:/Users/anne/Downloads/Sisa.jpg" width="100px" alt="Sisa">
+                    </td>
+                    <td>
+                        Sisa
+                    </td>
+                    <td>Sisa is Pedro's wife. Despite being abused she still cared for her husband because she didn't have anywhere else to go. When her Children went missing she went crazy and started searching for them endlessly.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="file:///C:/Users/anne/Downloads/Crispin.jpg" width="100px" alt="Crispin">
+                    </td>
+                    <td>
+                        Crispin
+                    </td>
+                    <td>The son of both Sisa and Pedro. He was always against abuse and the way his father treated his family and he always planned on running away from his father along with his mother and brother. When he got older, he ran away to work for Chrisostomo Ibarra. </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="file:///C:/Users/anne/Downloads/Basillio.jpg" width="100px" alt="Basilio">
+                    </td>
+                    <td>
+                        Basilio
+                    </td>
+                    <td>Basilio is the brother of Crispin. He served as a church boy in the church at San Diego. He later became one of Ibbara's Allies</td>
+                </tr>   
+            </table>
+            <input type="text" name="top" placeholder="Who is your favorite?">
+            <input type="submit" name="submit" value="Submit your review">
+        </div>
+    </div>
+
+    <div class="container" id="page2" style="display:none;">
+        <h3>Quarter 2 Project</h3>
+        <div class="form-group">
+            <div class="_2nd">
+                <header>
+                    <h1 align="center">P h o t o   G a l l e r y</h1>
+                </header>
+                <div class="description">
+                    <p class="info">The Philippines is an archipelago located in Southeast Asia known for its unique culture, flavorful cuisines, friendly citizens, and most especially its breath-taking tourist spots. Having so many wonderful places ranging from vibrant coral reefs all the way to majestic mountains and volcanoes, it's quite hard to pick a location for your perfect vacation; with this, here are 3 recommended areas for you to visit and explore.
+                    </p>
+                </div>
+                <br>
+                <div class="container" style="text-align:center;">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="https://i.pinimg.com/564x/fd/21/27/fd2127c02af2f77a7e8d069d53161dc7.jpg" width="250px" height="250px">
+                            <p align="center" style="font-size:20px;">Banaue Rice Terraces</p>
+                            <p>The Banaue Rice Terraces are a huge agricultural area located in the Northern parts of the Philippines. These were sculpted into the mountains by the Ifugao tribe of the Philippines. Even after 2000 years, these terraces still remain in use by the local people for agriculture and their daily living.</p>
+                        </div>
+                        <div class="col-sm">
+                            <img src="https://i.pinimg.com/564x/f5/9b/12/f59b12b9f241509d0f5e8103af195527.jpg" width="250px" height="250px">
+                            <p align="center" style="font-size:20px;">Mount Pulag</p>
+                            <p>One of the tallest mountains in the Philippines and the Luzon area. Hikers who trek to its summit are rewarded with an amazing view of the "sea of clouds" surrounding it. Being one of the tallest points in the country, you can even spot the peaks of its surrounding provinces.</p>
+                        </div>
+                        <div class="col-sm">
+                            <img src="https://i.pinimg.com/564x/93/de/97/93de97a42c668997481707412c77bf55.jpg" width="250px" height="250px">
+                            <p align="center" style="font-size:20px;">Mount Pinatubo</p>
+                            <p>Mount Pinatubo is a volcano located in Luzon. After its eruption in 1991, it left behind a massive crater lake at the top. Today, hikers and adventure seekers visit its peak to swim and boat on the lake's pristine waters.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="page3" style="display:none;">
+        <h3>Quarter 3 Project</h3>
+        <div class="form-group">
+            
+    <style type="text/css">
+
+        .header-container-3{
+            background-image:
+             url('https://i.pinimg.com/564x/eb/ad/32/ebad32ccdf677aa174bc28b8d94e4438.jpg');
+          background-position: center;
+          background-size: cover;
+          height: 300px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #ffffff;
+         }
+         .header-text{
+            font-family: helvetica;
+            font-size: 60px;
+         }
+         #image{
+            float: right;
+         }
+    </style>
+    <div class="header-container-3"></div>
+      <div class="container"></div>
+<nav class="navbar navbar-expand-sm navbar-outline-primary navbar-dark"> 
+      <div class="container-fluid">
+       <img src="https://i.pinimg.com/564x/e1/80/e3/e180e38c5659a024f7d02dafec09a4c6.jpg" class=
+       "rounded-circle" style="max-width: 8%;">
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Members</a>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#Alex">Alex Turner</a>
+             <li><a class="dropdown-item" href="#Matt">Matt Helders</a></li>
+             <li><a class="dropdown-item" href="#Jamie">Jamie Cook</a></li>
+              <li><a class="dropdown-item" href="#Nick">Nick O'Malley</a></li>
+         </ul>
+            <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Top Hits</a>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">I Wanna Be Yours</a></li>
+            <li><a class="dropdown-item" href="#">505</a></li>
+             <li><a class="dropdown-item" href="#">Why'd You Only Call Me When Your High</a></li>
+             <li><a class="dropdown-item" href="#">Do I Wanna Know</a></li>
+             <li><a class="dropdown-item" href="#">R U Mine</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown">
+             <a class="nav-link" href="#about">about</a></li>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Background</a></li>
+          </ul>
+        </li>
+    </li>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button type="button" class="btn btn-outline-secondary">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-8 mb-4 d-flex" id="about">
+                <div class="card container body">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="max-height: 100%; max-width: 1565px;">
+                            <h1 class="text-center py-4">About The Band</h1>
+                            <p class="text-center container my-3">
+                                Arctic Monkeys is an indie rock band formed in Sheffield, South Yorkshire, England in 2002 after meeting at Stocksbridge High School. The band consists of Alex Turner (vocals, guitar, piano), Jamie Cook (guitar), Nick O'Malley (backing vocals, bass) and Matt Helders (drums, vocals).
+                            </p>
+                            <br>
+                            <div class="alert alert-secondary">
+                                <strong>Fun Fact!</strong> All the Band Members have their own side projects aside from Arctic Monkeys. One of the side projects being, Death Ramps, another band which consists of all the Arctic Monkeys members along with 2 additional members. 
+                            </div>
+                        </div>
+                    </div>
+                         <div class="d-flex flex-column align-items-left">
+                        <img src="https://i.pinimg.com/564x/ee/eb/6d/eeeb6dfcd4b272d4374f57eef662ead0.jpg" class="rounded-circle" style="max-width: 150px; max-height: 50%;" id="Alex">
+                        <p> <strong>Alexander David Turner</strong> (born 6 January 1986) is an English musician, singer, songwriter, and record producer. He is well known as the front man and principal songwriter of the rock band Arctic Monkeys, with whom he has released seven albums. He has also recorded with his side project involving Miles Kane, as The Last Shadow Puppets and also as a solo artist.</p>
+                        <img src="https://i.pinimg.com/564x/58/57/34/5857347141d37868c5208e2d223d219c.jpg" class="rounded-circle" style="max-width: 150px;" id="Matt">
+                        <p><strong>Matthew Helders</strong> (born 7 May 1986) is an English drummer, vocalist and songwriter. He is best known as a founding member of Arctic Monkeys, with whom he has recorded five studio albums.</p>
+                        <img src="https://i.pinimg.com/564x/03/ff/9c/03ff9c326cf3b299812d437b27c9b8de.jpg" class="rounded-circle" style="max-width: 150px;" id="Jamie">
+                        <p><strong>Jamie Robert Cook</strong> (born 8 July 1985) is an English guitarist and songwriter. He is best known as the rhythm and lead guitarist and a founding member of the indie rock band Arctic Monkeys, with whom he has recorded six studio albums.</p>
+                        <img src="https://i.pinimg.com/564x/21/30/1b/21301b36e826607a7b4edba40a69aaae.jpg" class="rounded-circle" style="max-width: 150px;" id="Nick">
+                        <p><strong>Nicholas O'Malley</strong> (born 5 July 1985) is the bass guitarist and backing vocalist of English band Arctic Monkeys.</p>
+                    </div>
+                </div>
+                <div class="card container body ">
+                    <div style="max-width: 100%; padding: 10px;">
+                        <center><img src="https://i.pinimg.com/564x/d2/76/95/d27695e593c1b64c2956c136add031b1.jpg" class="rounded" style="max-width: 450px;">
+                            <hr>
+                        <img src="https://i.pinimg.com/originals/f8/02/f0/f802f008015b49e345f844c5f5ae2371.gif" class="rounded" style="max-width: 450px;"></center>
+                        <div class="alert alert-secondary">
+                                <strong>Fun Facts!</strong>
+                                <ul color="black">
+                                <li>Alex Turner's middle name, "David", was inspired by David Bowie.</li>
+                                <li>Matt Helders is inspired by John Bonham, Led Zepplin's Drummer.</li>
+                                <li>The Arctic Monkeys have won many awards, including a BRIT Award in 2006, six BRITs, 20 NME Awards, and five GRAMMY Award nominations.</li>
+                                <br>
+                                <p>✨ Additional Funny Fact: Alex Turner often intentionally sings off-beat at concerts. Some say it's because he dislikes when people sing with him, but it's never really been confirmed. </p>
+                            </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+
+<script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        document.getElementById('login-page').style.display = 'none';
+        document.getElementById('main-page').style.display = 'block';
+    });
+
+function viewPage(pageId) {
+    var pages = ['page1', 'page2', 'page3'];
+    pages.forEach(function(page) {
+        document.getElementById(page).style.display = 'none';
+    });
+    document.getElementById(pageId).style.display = 'block';
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
